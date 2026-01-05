@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>e-sail</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>E - sail</h1>
+    <hr align="left" width="375px">
+
+    <!-- HAMBURGER (tylko mobile) -->
+    <button class="menu-toggle" aria-label="Menu">☰</button>
+
+    <nav class="nav-menu">
+      <a href="index.html" >Strona główna</a>
+
+      <div class="dropdown">
+        <a class="dropdown-toggle">Oferta ▾</a>
+        <div class="dropdown-content">
+          <a href="rejsy.html">rejsy</a>
+          <a href="oferta.html#szkolenia">szkolenia</a>
+          <a href="oferta.html#regaty">regaty</a>
+          <a href="oferta.html#eventy">eventy</a>
+
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a class="dropdown-toggle active">O nas ▾</a>
+        <div class="dropdown-content">
+          <a href="flota.html">flota</a>
+          <a href="ekipa.html">ekipa</a>
+        </div>
+      </div>
+
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
+
+    <section id="flota">
+
+    <h1>Nasza flota</h1>
+    <div class="gallery">
+      <div class="item">
+        <p>S/Y Libertad</p>
+        <img src="img/libertad.jpeg" alt="s/y libertad">
+        <a href="#libertad" class="btn">Szczegóły</a>
+      </div>
+
+      <div class="item">
+        <p>S/Y Cleo</p>
+        <img src="img/cleo.jpg" alt="s/y Cleo">
+
+        <a href="https://vegacleo.org" class="btn">Szczegóły</a>
+      </div>
+
+      <div class="item">
+        <p>S/Y Alma</p>
+        <img src="img/alma.jpg" alt="s/y alma">
+        <a href="#alma" class="btn">Szczegóły</a>
+      </div>
+
+
+      <!-- dodaj więcej elementów -->
+    </div>
+  </section>
+
+
+<hr width="800px">
+
+<section id="libertad">
+  <h2> S/Y Libertad</h2>
+
+<div class="event-image">
+  <img src="img/libertad.jpeg" alt="s/y libertad">
+
+</div>
+
+<div class="cards">
+
+    <div class="card">
+      <h3>Jacht: Libertad</h3>
+      <p><b>Typ:</b> Niagara 42 - oceaniczny</p>
+  <ul>
+  <li>długość: 13m</li>
+  <li>ilość miejsc: 6 - 7 osób</li>
+  <li>2 kabiny podwójne</li>
+  <li>2 miejsca w messie</li>
+  </ul>
+
+    </div>
+    <div class="card">
+      <h3>O jachcie</h3>
+      <p>Myślę, że tu trzeba wrzucić trochę info o jachcie</p>
+    </div>
+
+
+
+
+</section>
+
+<section id="alma">
+  <h2> S/Y Alma</h2>
+
+<div class="event-image">
+  <img src="img/alma.jpg" alt="s/y alma">
+
+</div>
+
+<div class="cards">
+
+    <div class="card">
+      <h3>Jacht: Alma</h3>
+      <p><b>Typ:</b> Comfortina 32 - morski</p>
+<ul>
+  <li>długość: 9,5m</li>
+  <li>ilość miejsc: 5 - 6 osób</li>
+  <li>2 kabiny podwójne</li>
+  <li>2 miejsca w messie</li>
+</ul>
+
+    </div>
+    <div class="card">
+      <h3>O jachcie</h3>
+      <p>Myślę, że tu trzeba wrzucić trochę info o jachcie</p>
+    </div>
+</section>
+
+<footer id="stopka">
+  <p>&copy; 2025 E-Sail Ada Osińska</p>
+  <p><a href="#top">Powrót na górę strony</a></p>
+</footer>
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+  const dropdowns = document.querySelectorAll('.dropdown');
+
+  menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+
+  dropdowns.forEach(dropdown => {
+    dropdown.querySelector('.dropdown-toggle').addEventListener('click', (e) => {
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+        dropdown.classList.toggle('active');
+      }
+    });
+  });
+</script>
+</body>
+</html>

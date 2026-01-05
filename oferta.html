@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>e-sail</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>E - sail</h1>
+    <hr align="left" width="375px">
+
+    <!-- HAMBURGER (tylko mobile) -->
+    <button class="menu-toggle" aria-label="Menu">☰</button>
+
+    <nav class="nav-menu">
+      <a href="index.html" >Strona główna</a>
+
+      <div class="dropdown">
+        <a class="dropdown-toggle active">Oferta ▾</a>
+        <div class="dropdown-content">
+          <a href="rejsy.html">rejsy</a>
+          <a href="oferta.html#szkolenia">szkolenia</a>
+          <a href="oferta.html#regaty">regaty</a>
+          <a href="oferta.html#eventy">eventy</a>
+
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a class="dropdown-toggle">O nas ▾</a>
+        <div class="dropdown-content">
+          <a href="flota.html">flota</a>
+          <a href="ekipa.html">ekipa</a>
+        </div>
+      </div>
+
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
+
+  <section id="szkolenia">
+
+    <section> 
+    <h2>Szkolenia</h2>
+    <hr width="800px">
+
+    <div class="gallery">
+      <div class="item">
+<p><b>„Dobry Skipper”</b></p>
+        <img src="img/szkol_1.jpg" alt="Opis 1">
+        <p>w tygodniu</p>
+      </div>
+      
+
+
+    <div class="card">
+      <h3>Jacht: s/y Alma (LOA 9,5m)</h3>
+      <p><b>terminy:</b></p>
+      <ul>
+      <li>15-19 czerwca 2026</li>
+      <li>22-26 czerwca 2026</li>
+      </ul>
+  <p>Czas: 5 dni</p>
+  <p>Baza: Szczecin</p>
+ 
+
+    </div>
+    
+  </section>
+
+ <section>
+   <hr width="800px">
+    
+    <div class="gallery">
+      <div class="item">
+<p><b>„Zuch Załogant”</b></p>
+        <img src="img/szkol_2.jpg" alt="Opis 1">
+        <p>w weekend</p>
+      </div>
+
+
+    <div class="card">
+      <h3>Jacht: s/y Alma (LOA 9,5m)</h3>
+      <p><b>terminy:</b></p>
+      <ul>
+      <li>9-10 maja 2026</li>
+      <li>30-31 maja 2026</li>
+      </ul>
+  <p>Czas: 2 dni</p>
+  <p>Baza: Szczecin</p>
+  
+
+    </div>
+    
+  </section>
+
+  <section>
+   <hr width="800px">
+    
+    <div class="gallery">
+      <div class="item">
+<p><b>Work & Sail</b></p>
+        <img src="img/szkol_3.jpg" alt="Opis 1">
+        <p>w tygodniu</p>
+      </div>
+
+
+    <div class="card">
+      <h3>Jacht: s/y Alma (LOA 9,5m)</h3>
+      <p><b>terminy:</b></p>
+      <ul>
+      <li>18-22 maja 2026</li>
+      <li>25-29 maja 2026</li>
+      </ul>
+  <p>Czas: 5 dni</p>
+  <p>Baza: Szczecin</p>
+  
+
+    </div>
+    
+  </section>
+  <section>
+   <hr width="800px">
+    
+    <div class="gallery">
+      <div class="item">
+<p><b>Szkolenie na życzenie</b></p>
+        <img src="img/szkol_4.jpg" alt="Opis 1">
+        <p>w tygodniu / w weekend</p>
+      </div>
+
+
+    <div class="card">
+      <h3>Jacht: Alma(LOA 9,5m)/Libertad(LOA 12,8m) </h3>
+      <p><b>terminy: do uzgodnienia
+  <p>Czas: 2 - 7 dni</p>
+  <p>Baza: Szczecin</p>
+  
+
+    </div>
+    
+  </section>
+  
+      <!-- dodaj więcej elementów -->
+    
+<hr width="800px">
+<section id="regaty">
+  <h2>regaty</h2>
+  <p>Telefon: +48_696_114_644 (WhatsApp)</p>
+  <p class="hero-buttons">
+  <a href="mailto:esail.eu@gmail.com" class="btn">esail.eu@gmail.com</a>
+  <a href="mailto:e-sail@e-sail.eu" class="btn">e-sail@e-sail.eu</a>
+</p>
+
+  <p >Adres: ul. 1 maja 39 71-627 Szczecin</p>
+
+
+</section>
+
+<hr width="800px">
+
+
+<section id="regaty">
+  <h2>Eventy</h2>
+  <p>Telefon: +48_696_114_644 (WhatsApp)</p>
+  <p class="hero-buttons">
+  <a href="mailto:esail.eu@gmail.com" class="btn">esail.eu@gmail.com</a>
+  <a href="mailto:e-sail@e-sail.eu" class="btn">e-sail@e-sail.eu</a>
+</p>
+
+  <p>Adres: ul. 1 maja 39 71-627 Szczecin</p>
+
+
+</section>
+</section>
+
+
+
+<footer id="stopka">
+  <p>&copy; 2025 E-Sail Ada Osińska</p>
+  <p><a href="#top">Powrót na górę strony</a></p>
+</footer>
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+  const dropdowns = document.querySelectorAll('.dropdown');
+
+  menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+
+  dropdowns.forEach(dropdown => {
+    dropdown.querySelector('.dropdown-toggle').addEventListener('click', (e) => {
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+        dropdown.classList.toggle('active');
+      }
+    });
+  });
+</script>
+</body>
+</html>
