@@ -5,22 +5,25 @@ html,
 body {
   margin: 0;
   padding: 0;
+   padding-top: 120px;
 }
 
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
+  padding-top: 120px; /* wysokość headera */
 }
 
 /* ===============================
    HEADER + MENU
 =============================== */
 header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 2000;
   background: #1e3a8a;
-  padding: 16px 20px;
 }
 
 header h1 {
@@ -347,21 +350,44 @@ footer a {
     box-shadow: none;
     background: #1e40af;
   }
-
   body {
     padding-top: 160px;
-  }
+  } 
 
   .nav-menu {
-    position: absolute;
-    top: 100%;
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 120px; /* pod headerem */
     left: 0;
     width: 100%;
+    background: #1e3a8a;
+    z-index: 1999;
   }
 }
 
 @media (max-width: 600px) {
   .event-image img {
     width: 90%;
+  }
+}
+
+/* === FIX MOBILE MENU – WSZYSTKIE PODSTRONY === */
+@media (max-width: 768px) {
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 160px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    transform: none;
   }
 }
