@@ -312,6 +312,29 @@ footer a {
   text-decoration: none;
 }
 
+.rejsy-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.rejsy-table th,
+.rejsy-table td {
+  border: 1px solid #e5e7eb;
+  padding: 10px 12px;
+  text-align: left;
+}
+
+.rejsy-table th {
+  background: #1e3a8a;
+  color: white;
+}
+
+.rejsy-table tr:nth-child(even) {
+  background: #f9fafb;
+}
+
 /* ===============================
    MENU MOBILNE
 =============================== */
