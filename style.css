@@ -104,7 +104,9 @@ nav a.active {
 section {
   padding: 40px 20px;
 }
-
+[id] {
+  scroll-margin-top: 100px;
+}
 section h2 {
   text-align: center;
   background: #e5e7eb;
@@ -290,7 +292,7 @@ h4 {
 }
 
 .btn2:hover {
-  background: #585a5c;
+  background: #377dc4;
   transform: translateY(-2px);
 }
 
@@ -317,22 +319,9 @@ h4 {
   justify-content: center;
   min-height: 300px;
 }
-
 /* ===============================
-   STOPKA
+   TABLKI
 =============================== */
-footer {
-  background: #111827;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
-
-footer a {
-  color: white;
-  text-decoration: none;
-}
-
 .rejsy-table {
   width: 100%;
   border-collapse: collapse;
@@ -355,6 +344,22 @@ footer a {
 .rejsy-table tr:nth-child(even) {
   background: #f9fafb;
 }
+/* ===============================
+   STOPKA
+=============================== */
+footer {
+  background: #111827;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+
 
 /* ===============================
    MENU MOBILNE
