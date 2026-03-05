@@ -457,6 +457,11 @@ footer a {
     width: 90%;
   }
 }
+@media (max-width: 768px) {
+  .hero {
+    background-attachment: scroll;
+  }
+}
 
 /* === FIX MOBILE MENU – WSZYSTKIE PODSTRONY === */
 @media (max-width: 768px) {
