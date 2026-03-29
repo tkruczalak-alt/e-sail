@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>e-sail</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>E - sail</h1>
+    <hr align="left" width="375px">
+
+    <!-- HAMBURGER (tylko mobile) -->
+    <button class="menu-toggle" aria-label="Menu">☰</button>
+
+    <nav class="nav-menu">
+      <a href="index.html" >Strona główna</a>
+      <a href="info.html" >Info</a>
+
+      <div class="dropdown">
+        <a class="dropdown-toggle active">Oferta ▾</a>
+        <div class="dropdown-content">
+          <a href="rejsy.html">rejsy</a>
+          <a href="szkolenia.html">szkolenia</a>
+          <a href="regaty.html">regaty</a>
+          <a href="eventy.html">eventy</a>
+
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a class="dropdown-toggle">O nas ▾</a>
+        <div class="dropdown-content">
+          <a href="flota.html">flota</a>
+          <a href="ekipa.html">ekipa</a>
+        </div>
+      </div>
+
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
+<section id="szkolenia">
+
+   
+
+<section id="regaty">
+  <h2>regaty - sezon 2026</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>2026 - jacht s/y Alma</h3>
+
+      <div style="overflow-x:auto;">
+        <table class="rejsy-table">
+          <thead>
+            <tr>
+              <th>Termin / dni</th>
+              <th>ilość dni</th>
+              <th>Nazwa regat</th>
+              <th>Trasa</th>
+              <th>ilość miejsc</th>
+              <th>cena</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>16 - 17 maja</td>
+              <td>2</td>
+              <td>Regaty YKP-YKU</td>
+              <td>Zalew Szczeciński</td>
+              <td>4/4</td>
+              <td>zł</td>
+            </tr>
+
+            <tr>
+              <td>23 - 24 maja</td>
+              <td>2</td>
+              <td>Regaty Magnolii</td>
+              <td>Jezioro Dąbie</td>
+              <td>4/4</td>
+              <td>zł</td>
+            </tr>
+
+            <tr>
+              <td>20 - 21 czerwca</td>
+              <td>2</td>
+              <td>Regaty Kom. LOK</td>
+              <td>Jezioro Dąbie</td>
+              <td>4/4</td>
+              <td>zł</td>
+            </tr>
+
+             <tr>
+              <td>27 - 28 czerwca</td>
+              <td>2</td>
+              <td>Regaty Dni Morza</td>
+              <td>Zatoka Pomorska</td>
+              <td>4/4</td>
+              <td>zł</td>
+            </tr>
+
+            <tr>
+              <td>29 czerwca - 5 lipca</td>
+              <td>7</td>
+              <td>Regaty Unity-Line</td>
+              <td>Bałtyk</td>
+              <td>4/4</td>
+              <td>zł</td>
+            </tr>
+
+            <tr>
+              <td>24 lipca - 2 sierpnia</td>
+              <td>9</td>
+              <td>Regaty Etapowe</td>
+              <td>Zalew Szczeciński / Zatoka Pomorska</td>
+              <td>4/4</td>
+              <td>zł</td>
+            </tr>
+
+            
+
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+  <p>Telefon: +48_696_114_644 (WhatsApp)</p>
+  <p class="hero-buttons">
+  <a href="mailto:esail.eu@gmail.com" class="btn">zapisz się</a>
+
+</p>
+
+
+
+</section>
+
+
+  
+
+
+  
+
+
+
+</section>
+
+
+
+<footer id="stopka">
+  <p>&copy; 2026 E-Sail Ada Osińska</p>
+  <p><a href="#top">Powrót na górę strony</a></p>
+</footer>
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+  const dropdowns = document.querySelectorAll('.dropdown');
+
+  menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+
+  dropdowns.forEach(dropdown => {
+    dropdown.querySelector('.dropdown-toggle').addEventListener('click', (e) => {
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+        dropdown.classList.toggle('active');
+      }
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>e-sail</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>E - sail</h1>
+    <hr align="left" width="375px">
+
+    <!-- HAMBURGER (tylko mobile) -->
+    <button class="menu-toggle" aria-label="Menu">☰</button>
+
+    <nav class="nav-menu">
+      <a href="index.html" >Strona główna</a>
+      <a href="info.html" >Info</a>
+
+      <div class="dropdown">
+        <a class="dropdown-toggle active">Oferta ▾</a>
+        <div class="dropdown-content">
+          <a href="rejsy.html">rejsy</a>
+         <a href="szkolenia.html">szkolenia</a>
+          <a href="regaty.html">regaty</a>
+          <a href="eventy.html">eventy</a>
+
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a class="dropdown-toggle">O nas ▾</a>
+        <div class="dropdown-content">
+          <a href="flota.html">flota</a>
+          <a href="ekipa.html">ekipa</a>
+        </div>
+      </div>
+
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
+<section id="szkolenia">
+
+    <h1>Szkolenia</h1>
+    <div class="gallery">
+      <div class="item">
+        <p>Dobry skipper</p>
+        <img src="img/szkol_1.jpg" alt="Opis 1">
+        <a href="#s1" class="btn">Szczegóły</a>
+      </div>
+
+<div class="gallery">
+      <div class="item">
+        <p>Zuch Załogant</p>
+        <img src="img/szkol_2.jpg" alt="Opis 1">
+        <a href="#s2" class="btn">Szczegóły</a>
+      </div>
+      
+      
+
+      <div class="gallery">
+      <div class="item">
+        <p>Szkolenie na życzenie</p>
+        <img src="img/szkol_4.jpg" alt="Opis 1">
+        <a href="#s4" class="btn">Szczegóły</a>
+      </div>
+
+      
+      
+    </div>
+    <!-- dodaj więcej elementów -->
+    
+  </section>
+  
+<hr width="80px">
+   
+<section id="s1">
+  <h2> Dobry Skipper</h2>
+    <div class="gallery">
+      <div class="item">
+<p><b>"Dobry Skipper"</b></p>
+        <img src="img/szkol_1.jpg" alt="Opis 1">
+        <p><b>w tygodniu</b></p>
+      </div>
+
+
+
+    <div class="card">
+
+      <h3>Jacht: s/y Alma (LOA 9,5m)</h3>
+      <p><b>terminy:</b></p>
+      <ul>
+      <li>15-19 czerwca 2026</li>
+      <li>22-26 czerwca 2026</li>
+      </ul>
+  <p>Czas: 5 dni</p>
+  <p>Baza: Szczecin</p>
+
+
+    </div>
+
+    </div>
+</section>
+
+  </section>
+<hr width="80px">
+ <section id="s2"> 
+   
+<h2> Zuch Załogant</h2>
+    <div class="gallery">
+      <div class="item">
+<p><b>„Zuch Załogant”</b></p>
+        <img src="img/szkol_2.jpg" alt="Opis 1">
+        <p>w weekend</p>
+      </div>
+
+
+    <div class="card">
+      <h3>Jacht: s/y Alma (LOA 9,5m)</h3>
+      <p><b>terminy:</b></p>
+      <ul>
+      <li>9-10 maja 2026</li>
+      <li>30-31 maja 2026</li>
+      </ul>
+  <p>Czas: 2 dni</p>
+  <p>Baza: Szczecin</p>
+
+
+    </div>
+
+  </section>
+
+<hr width="80px">  
+  <section id="s4">
+  
+<h2> Szkolenie na życzenie</h2>
+    <div class="gallery">
+      <div class="item">
+<p><b>Szkolenie na życzenie</b></p>
+        <img src="img/szkol_4.jpg" alt="Opis 1">
+        <p>w tygodniu / w weekend</p>
+      </div>
+
+
+    <div class="card">
+      <h3>Jacht:</h3>
+      <p> Alma(LOA 9,5m)</p>
+      <p>Libertad(LOA 12,8m)</p>
+      <p><b>terminy:</b> do uzgodnienia</p>
+  <p>Czas: 2 - 7 dni</p>
+  <p>Baza: Szczecin</p>
+
+
+    </div>
+
+  </section>
+
+      <!-- dodaj więcej elementów -->
+
+
+
+
+
+<footer id="stopka">
+  <p>&copy; 2026 E-Sail Ada Osińska</p>
+  <p><a href="#top">Powrót na górę strony</a></p>
+</footer>
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+  const dropdowns = document.querySelectorAll('.dropdown');
+
+  menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+
+  dropdowns.forEach(dropdown => {
+    dropdown.querySelector('.dropdown-toggle').addEventListener('click', (e) => {
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+        dropdown.classList.toggle('active');
+      }
+    });
+  });
+</script>
+</body>
+</html>
